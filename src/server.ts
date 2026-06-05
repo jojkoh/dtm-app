@@ -11,7 +11,7 @@ type ServerEntry = {
 async function getServerEntry(): Promise<ServerEntry> {
   return serverEntry as unknown as ServerEntry;
 }
-}
+
 
 function brandedErrorResponse(): Response {
   return new Response(renderErrorPage(), {
